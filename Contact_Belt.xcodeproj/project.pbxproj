@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8D24CA4720240079000F7A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA4620240079000F7A68 /* AppDelegate.swift */; };
-		8D24CA4920240079000F7A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA4820240079000F7A68 /* ViewController.swift */; };
+		8D24CA4920240079000F7A68 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA4820240079000F7A68 /* ContactTableViewController.swift */; };
 		8D24CA4C20240079000F7A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D24CA4A20240079000F7A68 /* Main.storyboard */; };
 		8D24CA4F20240079000F7A68 /* Contact_Belt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA4D20240079000F7A68 /* Contact_Belt.xcdatamodeld */; };
 		8D24CA5120240079000F7A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D24CA5020240079000F7A68 /* Assets.xcassets */; };
 		8D24CA5420240079000F7A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D24CA5220240079000F7A68 /* LaunchScreen.storyboard */; };
 		8D24CA5F20240079000F7A68 /* Contact_BeltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA5E20240079000F7A68 /* Contact_BeltTests.swift */; };
 		8D24CA6A20240079000F7A68 /* Contact_BeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA6920240079000F7A68 /* Contact_BeltUITests.swift */; };
+		8D24CA782024013C000F7A68 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA772024013C000F7A68 /* AddContactViewController.swift */; };
+		8D24CA7A202401D3000F7A68 /* AddContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24CA79202401D3000F7A68 /* AddContactDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		8D24CA4320240079000F7A68 /* Contact_Belt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contact_Belt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D24CA4620240079000F7A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D24CA4820240079000F7A68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D24CA4820240079000F7A68 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		8D24CA4B20240079000F7A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D24CA4E20240079000F7A68 /* Contact_Belt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contact_Belt.xcdatamodel; sourceTree = "<group>"; };
 		8D24CA5020240079000F7A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		8D24CA6520240079000F7A68 /* Contact_BeltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Contact_BeltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D24CA6920240079000F7A68 /* Contact_BeltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_BeltUITests.swift; sourceTree = "<group>"; };
 		8D24CA6B20240079000F7A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D24CA772024013C000F7A68 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		8D24CA79202401D3000F7A68 /* AddContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				8D24CA4620240079000F7A68 /* AppDelegate.swift */,
-				8D24CA4820240079000F7A68 /* ViewController.swift */,
+				8D24CA4820240079000F7A68 /* ContactTableViewController.swift */,
+				8D24CA79202401D3000F7A68 /* AddContactDelegate.swift */,
 				8D24CA4A20240079000F7A68 /* Main.storyboard */,
+				8D24CA772024013C000F7A68 /* AddContactViewController.swift */,
 				8D24CA5020240079000F7A68 /* Assets.xcassets */,
 				8D24CA5220240079000F7A68 /* LaunchScreen.storyboard */,
 				8D24CA5520240079000F7A68 /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D24CA4920240079000F7A68 /* ViewController.swift in Sources */,
+				8D24CA4920240079000F7A68 /* ContactTableViewController.swift in Sources */,
+				8D24CA782024013C000F7A68 /* AddContactViewController.swift in Sources */,
 				8D24CA4720240079000F7A68 /* AppDelegate.swift in Sources */,
+				8D24CA7A202401D3000F7A68 /* AddContactDelegate.swift in Sources */,
 				8D24CA4F20240079000F7A68 /* Contact_Belt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
